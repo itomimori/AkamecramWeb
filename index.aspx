@@ -12,8 +12,8 @@
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-<header style="background: url('img/back.jpg') no-repeat center top fixed;">
-        <img src="img/Akame.jpg" alt="あかめ放課後子ども教室 ロゴ" class="logo" />
+<header style="background: url('back.jpg') no-repeat center top fixed;">
+        <img src="Akame.jpg" alt="あかめ放課後子ども教室 ロゴ" class="logo" />
         <h1>あかめ放課後子ども教室</h1>
         <p>放課後がもっと楽しくなる。</p>
     </header>
@@ -39,13 +39,13 @@
             <section class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="img/slide1.jpg" alt="無料体験授業" />
+                        <img src="slide1.jpg" alt="無料体験授業" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/slide2.jpg" alt="テスト対策" />
+                        <img src="slide2.jpg" alt="テスト対策" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/slide3.jpg" alt="自習室" />
+                        <img src="slide3.jpg" alt="自習室" />
                     </div>
                 </div>
             </section>
