@@ -1,0 +1,199 @@
+﻿:root {
+    --green-main: #81c784;
+    --green-accent: #66bb6a;
+    --green-dark: #388e3c;
+    --green-light: #e8f5e9;
+    --text-color: #2e4d32;
+    --font-jp: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+}
+
+main, header, footer, section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 1.5em;
+    margin: 1em auto;
+    max-width: 900px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+body {
+    background: url("https://images.unsplash.com/photo-1615800098779-1be32e60cca3?q=80&w=710&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center top fixed;
+    background-size: cover;
+    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #2e4d32;
+}
+
+/* 告知バナー */
+.notice-banner {
+    background-color: #ffecb3;
+    color: #4e342e;
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+section#news .swiper {
+    border-left: none !important;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 800px;
+    margin: 2em auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.swiper-slide {
+    border-left: none !important;
+    position: relative;
+    text-align: center;
+    height: 300px;
+}
+
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.caption {
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(129, 199, 132, 0.85);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* お知らせ欄 */
+#news {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1.5em 2em;
+    background-color: #fff;
+    border-left: 6px solid #66bb6a;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+
+/* Header with depth */
+header {
+    background: url("img/back.jpg") no-repeat center top fixed;
+    background-size: cover;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+    header h1 {
+        margin: 0 0 0.3em;
+        font-size: 2.4em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+.logo {
+    width: 180px; /* 大きくする */
+    height: 180px; /* 高さを明示して丸く整える */
+    border-radius: 50%; /* 完全な円形にする */
+    object-fit: cover; /* 内部で画像をトリミングしてフィット */
+    display: block;
+    margin: 0 auto 1em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* ほんのり浮かせる */
+}
+
+/* Navigation bar */
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 1em;
+    background-color: var(--green-dark);
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    padding: 0.2em 0.4em;
+}
+
+    nav a::after {
+        content: "🍃";
+        position: absolute;
+        right: -1.2em;
+        font-size: 0.9em;
+        opacity: 0.5;
+    }
+
+/* Section with green sidebar */
+section {
+    background-color: white;
+    border-left: 6px solid var(--green-accent);
+    border-radius: 8px;
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 1.5em 2em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Icon-style headings */
+h2::before {
+    content: "🌿 ";
+}
+
+h3::before {
+    content: "📗 ";
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    background-color: var(--green-accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6em 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: var(--green-dark);
+    }
+
+/* Footer */
+footer {
+    background-color: var(--green-main);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    border-top: 2px solid var(--green-accent);
+}
